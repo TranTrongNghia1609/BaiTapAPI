@@ -42,6 +42,7 @@ public class CategoryAPIController {
             return new ResponseEntity<Response>(new Response(false, "Thất bại", null), HttpStatus.NOT_FOUND);
         }
     }
+
     @PostMapping(path = "/addCategory")
     public ResponseEntity<?> addCategory(@Validated @RequestParam("categoryName")
                                          String categoryName,
